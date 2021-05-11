@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+  
+  
+    .box2{
+      width: 50%;
+      height: 50%;            
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.8;  
+  }
+    .stack-top{
+        z-index: 9;
+        margin: 20px; 
+    }

@@ -4,32 +4,36 @@ class ButtonClicked extends Component {
     constructor(props) {
         super(props);
         this.state={
-            message:''
-            
+            message:'',
+           
         }
         this.state={
-            color:'red' 
+             bgColor:"Red"
+           
         }
         
     }
     eventHandler(){
         this.setState({
-            message:'Button Clicked'
+            message:'Button Clicked',
+            bgColor:"Green"
         })
-        this.setState({
-            color:'green'
-        })
+        
     }
     
     render() {
         return (
             <div>
-                <div className="padding">{this.state.color}</div>
-                <button onClick={()=>this.eventHandler()}>Press</button>
+                
+                
+                <div style={{backgroundColor: this.state.bgColor , height:'50%',width:'50%',padding:'10%',marginLeft:'15%',marginTop:'10%'}}>{this.state.bgColor}</div>
+                <button onClick={()=>this.eventHandler()} >Press</button>
                 <div>{this.state.message}</div>
             </div>
         );
     }
 }
+
+
 
 export default ButtonClicked;
